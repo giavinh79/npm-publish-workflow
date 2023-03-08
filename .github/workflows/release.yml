@@ -26,5 +26,5 @@ jobs:
         # with:
         #   publish: yarn run build
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
           # NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}

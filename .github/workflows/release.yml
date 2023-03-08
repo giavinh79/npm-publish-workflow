@@ -7,22 +7,24 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  build:
+  release:
+    name: Release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Node.js
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      - name: Set-up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 14.x
           cache: "yarn"
 
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --frozen-lockfile --ignore-scripts
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
-        with:
-          publish: yarn run build
+        # with:
+        #   publish: yarn run build
         env:
-          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          # NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}

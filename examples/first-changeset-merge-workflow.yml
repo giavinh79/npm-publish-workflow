@@ -23,10 +23,8 @@ jobs:
       - name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1
-          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}
 
-      # - name: Send Slack notifications
-      #   if: steps.changesets.outputs.published == 'true'
+# This will create a PR with the versioning updates, upon merge, you will need to manually do a release by calling `yarn release`
+# and you will also have to manually create a GitHub release

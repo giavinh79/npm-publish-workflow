@@ -1,5 +1,5 @@
 {
-  "name": "curtains1234-test1",
+  "name": "publish-workflow-test-gl",
   "license": "MIT",
   "version": "0.0.2",
   "main": "dist/index.js",
@@ -7,7 +7,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
-    "lint": "tsc"
+    "lint": "tsc && changeset status",
+    "release": "yarn build & changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",

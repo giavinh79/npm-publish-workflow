@@ -12,7 +12,10 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-        
+        with:
+          # This makes action fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
+
       - name: Set-up Node.js
         uses: actions/setup-node@v3
         with:
@@ -26,9 +29,13 @@ jobs:
         uses: changesets/action@v1
         with:
           publish: yarn release
+          title: Release
+          commit: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}
 
       # - name: Send Slack notifications
       #   if: steps.changesets.outputs.published == 'true'
+
+# Once Changesets PR is merged, this will publish to npm and do a release on GitHub

@@ -1,3 +1,5 @@
+# Example Repo for NPM Publish Workflow
+
 ## Quick Start Guide
 
 1. Create GitHub personal access token (classic) + NPM publish token
@@ -9,6 +11,7 @@
 **YAML Syntax for GitHub Actions**: https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
 
 **Changesets**: 
+- FAQ: https://github.com/changesets/changesets/blob/main/docs/common-questions.md
 - GitHub Actions: https://github.com/changesets/action
 - Configuring: https://github.com/changesets/changesets/blob/main/docs/config-file-options.md#basebranch-git-branch-name
   - Likely you'll want to modify and ensure correct `access` and `baseBranch` values

@@ -1,6 +1,10 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
+  "notes": {
+    "overall config docs": "https://github.com/changesets/changesets/blob/main/docs/config-file-options.md",
+    "changelog customization": "https://github.com/changesets/changesets/blob/main/docs/modifying-changelog-format.md"
+  },
+  "changelog": "@changesets/changelog-github",
   "commit": false,
   "fixed": [],
   "linked": [],

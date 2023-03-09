@@ -1,10 +1,11 @@
 # Example Repo for NPM Publish Workflow
 
-## Quick Start Guide
+## Set Up
 
 1. Create GitHub personal access token (classic) + NPM publish token
 2. Add these to repository secrets named as `GHP_TOKEN` and `NPM_PUBLISH_ACCESS_TOKEN`
 3. In GitHub repository settings, go to: actions -> general -> workflow permissions -> **Enable Read & Write Permissions**
+4. (Optionally) Add [Changesets GitHub Bot](https://github.com/apps/changeset-bot) to the repo
 
 ## Useful Links
 

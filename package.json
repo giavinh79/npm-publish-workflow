@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsup index.ts --format cjs,esm --dts",
     "changeset": "changeset",
-    "lint": "tsc && changeset status",
+    "lint": "tsc",
     "release": "yarn build & changeset publish"
   },
   "devDependencies": {

@@ -1,4 +1,4 @@
-# Example Yarn Workspaces Monorepo + NPM Publish Workflow w/ Changesets
+# Example Yarn 3 Workspaces Monorepo + NPM Publish Workflow w/ Changesets
 
 ## Set Up
 

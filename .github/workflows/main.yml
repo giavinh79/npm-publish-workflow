@@ -17,4 +17,4 @@ jobs:
           cache: 'yarn'
 
       - run: yarn install --frozen-lockfile --ignore-scripts
-      - run: yarn run lint && yarn run build
+      - run: yarn workspaces foreach -pt --no-private run "yarn lint && yarn build"

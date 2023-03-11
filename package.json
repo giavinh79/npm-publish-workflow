@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "build": "./scripts/only-build-package-if-updated.sh",
+    "build": "yarn workspaces foreach -pt -v --no-private --since run build",
     "release": "yarn build && changeset publish"
   },
   "devDependencies": {

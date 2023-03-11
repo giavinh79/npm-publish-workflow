@@ -8,6 +8,10 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
+    permissions:
+      contents: write # to create release (changesets/action)
+      pull-requests: write # to create pull request (changesets/action)
+    name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -28,6 +32,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
+          # comment out publish to avoid auto-publishing to NPM
           publish: yarn release
           title: Release
           commit: Release
@@ -38,4 +43,4 @@ jobs:
       # - name: Send Slack notifications
       #   if: steps.changesets.outputs.published == 'true'
 
-# Once Changesets PR is merged, this will publish to npm and do a release on GitHub
+# Once Changesets PR is merged, this will publish to npm, do a release on GitHub, and update any CHANGELOGs

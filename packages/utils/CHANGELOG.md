@@ -1,5 +1,11 @@
 # gl-publish-workflow-test-utils
 
+## 0.1.1
+
+### Patch Changes
+
+- [#10](https://github.com/giavinh79/npm-publish-workflow/pull/10) [`e4b0abe`](https://github.com/giavinh79/npm-publish-workflow/commit/e4b0abe7d8e6d56162efefc3fd34eb7b3b713df1) Thanks [@giavinh79](https://github.com/giavinh79)! - add function return type
+
 ## 0.1.0
 
 ### Minor Changes

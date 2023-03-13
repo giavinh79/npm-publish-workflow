@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # https://yarnpkg.com/cli/workspaces/foreach
-# WIP - parameter --since may work, however on repos where the main branch is not `master` or `main` you will need to override `changesetBaseRefs` in yarn config
+# WIP - script to build packages only when they've been updated
+# maybe use `npm diff package.json` https://dev.to/bnb/the-new-npm-diff-command-k0m? but need to suppress error that gets thrown when package hasn't been published yet
 # git update-index --chmod=+x your_script.sh to make it executable on CI
 
 yarn workspaces foreach -pt -v --no-private --since run build

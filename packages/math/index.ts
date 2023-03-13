@@ -9,3 +9,7 @@ export const subtract = (a: number, b: number): number => {
 export const multiply = (a: number, b: number): number => {
   return a * b;
 }
+
+export const divide = (a: number, b: number): number => {
+  return a / b;
+}

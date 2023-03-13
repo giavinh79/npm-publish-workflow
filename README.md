@@ -20,6 +20,7 @@
 4. In GitHub repository settings, go to: actions -> general -> workflow permissions -> **Enable Read & Write Permissions**
 5. It is _important_ to ensure correct values for `access` and `baseBranch` [config properties](https://github.com/changesets/changesets/blob/main/docs/config-file-options.md)
 6. (Optionally) Add [Changesets GitHub Bot](https://github.com/apps/changeset-bot) to the repo as a reminder for changes that do need changesets
+7. Configure `changesetBaseRefs` for --since prop in `yarn workspaces foreach`
 
 - Some changes are not relevant to a release (i.e. README updates) so they do not need changesets
 

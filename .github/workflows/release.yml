@@ -36,7 +36,7 @@ jobs:
           # comment out publish to avoid auto-publishing to NPM
           publish: yarn release
           title: Release
-          commit: Release
+          commit: [release]
         env:
           GITHUB_TOKEN: ${{ secrets.GHP_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_PUBLISH_ACCESS_TOKEN }}

@@ -22,4 +22,4 @@ jobs:
           cache: "yarn"
 
       - run: yarn install --frozen-lockfile
-      - run: yarn workspaces foreach -pt -v --since --no-private run build"
+      - run: yarn workspaces foreach -pt -v --since --no-private run build

@@ -1,5 +1,11 @@
 # Example Yarn 3 Workspaces Monorepo + NPM Publish Workflow w/ Changesets
 
+## Description
+- Changesets for versioning and release
+- GitHub Actions for CI/CD
+- Yarn for package management and Yarn 3 for managing multiple packages
+- tsup for transpilation and bundling
+
 ## Set Up
 
 **Requires Yarn 3**

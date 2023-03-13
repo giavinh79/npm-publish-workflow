@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "build-ci": "yarn workspaces foreach -pt -v --since=origin/master --no-private run \"lint && build\"",
+    "build-ci": "yarn workspaces foreach -pt -v --since=master --no-private run \"lint && build\"",
     "build": "yarn workspaces foreach -pt -v --no-private run build",
     "release": "yarn build-ci && changeset publish"
   },

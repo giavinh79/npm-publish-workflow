@@ -1,3 +1,4 @@
+# Once Changesets PR is merged, this will publish to npm, do a release on GitHub, and update any CHANGELOGs
 name: Publish & Release
 on:
   push:
@@ -42,5 +43,3 @@ jobs:
 
       # - name: Send Slack notifications
       #   if: steps.changesets.outputs.published == 'true'
-
-# Once Changesets PR is merged, this will publish to npm, do a release on GitHub, and update any CHANGELOGs

@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "build": "yarn workspaces foreach -pt -v --no-private --since run build",
+    "build": "yarn workspaces foreach -pt -v --no-private run build",
     "release": "yarn build && changeset publish"
   },
   "devDependencies": {

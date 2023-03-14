@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "build-ci": "yarn workspaces foreach -pt -v --since --no-private run \"lint && build\"",
-    "build": "yarn workspaces foreach -pt -v --no-private run \"lint && build\"",
+    "build-ci": "./scripts/build-workspace-packages.sh",
+    "build": "yarn workspaces foreach -pt -v --no-private exec 'yarn lint && yarn build'",
     "release": "yarn build-ci && changeset publish"
   },
   "devDependencies": {

@@ -4,6 +4,6 @@ export const areNumbersEqual = (a: number, b: number) => {
 
 export const getSum = (numbers: number[]): number => {
   return numbers.reduce((acc, num) => {
-    return acc;
+    return acc + num;
   }, 0)
 }

@@ -1,5 +1,11 @@
 # gl-publish-workflow-test-utils
 
+## 0.1.2
+
+### Patch Changes
+
+- [#22](https://github.com/giavinh79/npm-publish-workflow/pull/22) [`e212226`](https://github.com/giavinh79/npm-publish-workflow/commit/e212226db3442eea694e6d3b3784c9b0878d65e0) Thanks [@giavinh79](https://github.com/giavinh79)! - fix sum method
+
 ## 0.1.1
 
 ### Patch Changes

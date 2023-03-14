@@ -25,4 +25,4 @@ jobs:
         run: echo "$GITHUB_CONTEXT"
 
       - run: yarn install --frozen-lockfile
-      - run: yarn build-ci
+      - run: yarn build

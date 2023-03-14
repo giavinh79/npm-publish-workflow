@@ -1,4 +1,4 @@
-export const areNumbersEqual = (a: number, b: number): boolean => {
+export const areNumbersEqual = (a: number, b: number) => {
   return a === b;
 }
 

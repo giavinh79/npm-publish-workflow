@@ -34,7 +34,7 @@ jobs:
         uses: changesets/action@v1
         with:
           # comment out publish to avoid auto-publishing to NPM
-          publish: yarn release -- param
+          publish: yarn release -- param ${{ github.event.pull_request.head.sha }}
           title: Release
           commit: "[release]"
         env:

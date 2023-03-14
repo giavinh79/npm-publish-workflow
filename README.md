@@ -5,7 +5,7 @@
 - Changesets for versioning and release
 - GitHub Actions for CI/CD
 - Yarn for package management and Yarn 3 for managing multiple packages
-- tsup for transpilation and bundling
+- tsup for transpilation and bundling (requires Node 18)
 
 ## Set Up
 

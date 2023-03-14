@@ -8,9 +8,12 @@
   ],
   "scripts": {
     "changeset": "changeset",
-    "build-ci": "yarn workspaces foreach -pt -v --since --no-private run \"lint && build\"",
-    "build": "yarn workspaces foreach -pt -v --no-private run \"lint && build\"",
-    "release": "yarn build-ci && changeset publish"
+    "build-ci": "yarn workspaces foreach -pt -v --since=$1 --no-private exec 'yarn run lint && yarn build'",
+    "build": "yarn workspaces foreach -pt --no-private exec 'yarn run lint && yarn build'",
+    "release": "yarn build-ci -- param $1 && changeset publish",
+    "release-locally": "yarn build && changeset publish",
+    "test": "echo 'hello' && echo $1",
+    "test2": "yarn test -- param $1"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",

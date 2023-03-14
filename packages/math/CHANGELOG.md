@@ -1,5 +1,15 @@
 # gl-publish-workflow-test-math
 
+## 0.1.0
+
+### Minor Changes
+
+- [#21](https://github.com/giavinh79/npm-publish-workflow/pull/21) [`fa56299`](https://github.com/giavinh79/npm-publish-workflow/commit/fa56299f28c5e29e345cce280c08dddcfc6ddd2b) Thanks [@giavinh79](https://github.com/giavinh79)! - added **square** function
+
+### Patch Changes
+
+- [#19](https://github.com/giavinh79/npm-publish-workflow/pull/19) [`76e2868`](https://github.com/giavinh79/npm-publish-workflow/commit/76e28684b6a645c57eab7a35effa53c23dd49477) Thanks [@giavinh79](https://github.com/giavinh79)! - added return type to divide function
+
 ## 0.0.4
 
 ### Patch Changes

@@ -60,3 +60,8 @@
 
 - GitHub Action: https://github.com/slackapi/slack-github-action
 - @TODO: How to update Slack channel topic?
+
+## FAQ
+
+1. **How many changesets per PR?** You should only typically generate one changeset per PR. Since it's a markdown file, you can easily edit it whenever to update the versioning or changelog notes.
+2. **What happens if release fails**? The `GitHub Action` release workflow will fail, after investigating the logs and fixing it (i.e. maybe `npm token` wasn't configured correctly), you can re-run the workflow to publish any packages that weren't published.

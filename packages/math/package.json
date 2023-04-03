@@ -1,6 +1,6 @@
 {
   "name": "gl-publish-workflow-test-math",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Example Math Package",
   "repository": "https://github.com/giavinh79/npm-publish-workflow",
   "author": "giavinh79",

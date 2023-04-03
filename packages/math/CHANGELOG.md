@@ -1,5 +1,11 @@
 # gl-publish-workflow-test-math
 
+## 0.2.0
+
+### Minor Changes
+
+- [#24](https://github.com/giavinh79/npm-publish-workflow/pull/24) [`245559a`](https://github.com/giavinh79/npm-publish-workflow/commit/245559adc9ab5e347637e75129b11a76f34f96da) Thanks [@giavinh79](https://github.com/giavinh79)! - remove divide function
+
 ## 0.1.0
 
 ### Minor Changes

@@ -59,6 +59,7 @@
 **Slack**:
 
 - GitHub Action: https://github.com/slackapi/slack-github-action
+- 3rd party GitHub Action: https://github.com/Thinkmill/changesets-publish-slack-action
 - @TODO: How to update Slack channel topic?
 
 ## FAQ

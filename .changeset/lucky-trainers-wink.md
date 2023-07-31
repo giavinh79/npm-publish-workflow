@@ -2,5 +2,7 @@
 "gl-publish-workflow-test-math": minor
 ---
 
-- **feat:** add cube function
+Add cube function
 - **docs:** update docs to fix incorrect command
+- **docs-next:** imaginary other docs change
+

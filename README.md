@@ -29,7 +29,7 @@
 **Contributor**:
 
 1. Make desired changes to packages.
-2. Run `yarn changesets` to version changes.
+2. Run `yarn changeset` to version changes.
 3. Create a PR for the change (or merge directly).
 
 **Code Owner**:

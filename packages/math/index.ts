@@ -17,3 +17,7 @@ export const multiply = (a: number, b: number) => {
 export const square = (a: number): number => {
   return Math.pow(a, 2);
 }
+
+export const cube = (a: number): number => {
+  return Math.pow(a, 3);
+}

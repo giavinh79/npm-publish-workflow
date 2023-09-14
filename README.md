@@ -5,7 +5,7 @@
 - Changesets for versioning and release
 - GitHub Actions for CI/CD
 - Yarn for package management and Yarn 3 for managing multiple packages
-- tsup for transpilation and bundling
+- tsup 4 transpilation and bundling
 
 ## Set Up
 

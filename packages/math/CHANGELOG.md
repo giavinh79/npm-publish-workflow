@@ -1,5 +1,13 @@
 # gl-publish-workflow-test-math
 
+## 0.4.0
+
+### Minor Changes
+
+- [#28](https://github.com/giavinh79/npm-publish-workflow/pull/28) [`6a7ba5a`](https://github.com/giavinh79/npm-publish-workflow/commit/6a7ba5aed45280c4c727b7df2ea3488afb13cba9) Thanks [@giavinh79](https://github.com/giavinh79)! - Add cube function
+  - **docs:** update docs to fix incorrect command
+  - **docs-next:** imaginary other docs change
+
 ## 0.3.0
 
 ### Minor Changes

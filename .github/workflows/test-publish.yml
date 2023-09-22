@@ -1,0 +1,41 @@
+name: Test Publish
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.x
+          cache: "yarn"
+        
+  commit-change:
+    name: Commit Change
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Read Release and Log
+        id: read-release
+        run: |
+          RELEASE_NAME=$(jq -r '.release.name' $GITHUB_EVENT_PATH)
+
+          echo "Release Name: $RELEASE_NAME" >> README.md
+        shell: bash
+      # Other steps that change files in the repository
+
+      # Commit all changed files back to the repository
+      - uses: stefanzweifel/git-auto-commit-action@v4

@@ -47,3 +47,4 @@ jobs:
           branch: master
           commit_message: Restore Changesets
           create_branch: false
+          push_options: --force

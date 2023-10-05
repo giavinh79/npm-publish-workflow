@@ -11,12 +11,10 @@
 
 **Requires Yarn 3**
 
-1. Create [GitHub personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#personal-access-tokens-classic) - add all permissions for `repo` scope and `read:user` for user scope
-
-- Fine-grained access token does not work
+1. Create [GitHub personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#personal-access-tokens-classic) - add all permissions for `repo` scope and `read:user` for user scope. A personal access token is needed so that the GitHub actions the bot takes can trigger workflows (`GITHUB_TOKEN` would not work here).
 
 2. Create a [NPM publish token](https://docs.npmjs.com/creating-and-viewing-access-tokens)
-3. Add these to your [GitHub repository secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) (named as `GHP_TOKEN` and `NPM_PUBLISH_ACCESS_TOKEN`)
+3. Add these to your [GitHub repository secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) (named as `PAT_TOKEN` and `NPM_PUBLISH_ACCESS_TOKEN`)
 4. In GitHub repository settings, go to: actions -> general -> workflow permissions -> **Enable Read & Write Permissions**
 5. It is _important_ to ensure correct values for `access` and `baseBranch` [config properties](https://github.com/changesets/changesets/blob/main/docs/config-file-options.md)
 6. (Optionally) Add [Changesets GitHub Bot](https://github.com/apps/changeset-bot) to the repo as a reminder for changes that do need changesets

@@ -1,6 +1,9 @@
 # Once Changesets PR is merged, this will publish to npm, do a release on GitHub, and update any CHANGELOGs
 name: Publish & Release
 on:
+  push:
+    branches:
+      - "**"
   pull_request:
     branches:
       - "**"

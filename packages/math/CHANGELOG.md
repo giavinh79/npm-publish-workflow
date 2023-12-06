@@ -1,5 +1,11 @@
 # gl-publish-workflow-test-math
 
+## 0.4.2
+
+### Patch Changes
+
+- [`db44e0e`](https://github.com/giavinh79/npm-publish-workflow/commit/db44e0ee66dad30ca25ae8f2f52a42796ccd0429) Thanks [@giavinh79](https://github.com/giavinh79)! - [Test] Hello
+
 ## 0.4.1
 
 ### Patch Changes

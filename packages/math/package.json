@@ -13,9 +13,6 @@
     "build": "pika build",
     "lint": "tsc"
   },
-  "publishConfig": {
-    "directory": "pkg"
-  },
   "@pika/pack": {
     "pipeline": [
       [

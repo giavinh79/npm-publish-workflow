@@ -1,5 +1,11 @@
 # gl-publish-workflow-test-math
 
+## 0.4.3
+
+### Patch Changes
+
+- [`01f348b`](https://github.com/giavinh79/npm-publish-workflow/commit/01f348ba1d22993f78b9d3c396e5be926a5f8fa9) Thanks [@giavinh79](https://github.com/giavinh79)! - [Test] Hello2
+
 ## 0.4.2
 
 ### Patch Changes

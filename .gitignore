@@ -7,3 +7,6 @@ dist
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+pkg
+pkg/*
+.DS_Store

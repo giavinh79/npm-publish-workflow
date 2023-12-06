@@ -27,7 +27,7 @@ jobs:
           node-version: 16.x
           cache: "yarn"
 
-      - run: yarn install --frozen-lockfile
+      - run: yarn install
 
       - name: Create Release Pull Request or Publish
         id: changesets

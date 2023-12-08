@@ -7,5 +7,4 @@ updates:
       interval: "daily"
       time: "14:30"
       timezone: "America/Toronto"
-    versioning-strategy: increase
     open-pull-requests-limit: 20

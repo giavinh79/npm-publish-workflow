@@ -1842,12 +1842,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-react-refresh@npm:^0.3.4":
-  version: 0.3.5
-  resolution: "eslint-plugin-react-refresh@npm:0.3.5"
+"eslint-plugin-react-refresh@npm:^0.4.5":
+  version: 0.4.5
+  resolution: "eslint-plugin-react-refresh@npm:0.4.5"
   peerDependencies:
     eslint: ">=7"
-  checksum: 8d44201968838ad0ac13311fe593bc422ce80d9143d104c7485e8bcdeb4f8c3b4cda21322a7e360129f14912a980d23e2fb1f9f10d9701c623901e359bd7dd17
+  checksum: 953e665f6aaf097291a2bb07fde05466338aecd169bcd6faa708b50166912e3a757f45a45252cf7738b5e0d986224d363cc227864e98c979fe9978770b2b9f42
   languageName: node
   linkType: hard
 
@@ -2130,7 +2130,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "gl-publish-workflow-test-utils@workspace:packages/utils"
   dependencies:
-    eslint-plugin-react-refresh: ^0.3.4
+    eslint-plugin-react-refresh: ^0.4.5
     tsup: ^6.5.0
     typescript: ^4.9.4
   languageName: unknown

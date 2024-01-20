@@ -1,5 +1,17 @@
 # gl-publish-workflow-test-utils
 
+## 0.1.3
+
+### Patch Changes
+
+- [`2a2edc1`](https://github.com/giavinh79/npm-publish-workflow/commit/2a2edc12413d4400e2a6a6a8981e9fab0b522475) Thanks [@giavinh79](https://github.com/giavinh79)! - <TestComponent> Test `Changeset`
+
+  <Docs>[TestComponent] Spaced out
+  <Docs>[TestComponent] Spaced out 2
+  <TestComponent> Test `Changeset` 2
+
+  <TestComponent> Test `Changeset` 3
+
 ## 0.1.2
 
 ### Patch Changes

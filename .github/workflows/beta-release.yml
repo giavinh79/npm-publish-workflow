@@ -24,8 +24,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          [[ "${{ env.PACKAGE_TO_PUBLISH }}" ]] || { echo "package input is empty" ; exit 1; }
-
           beta_package_version_regex='^[0-9]+\.[0-9]+\.[0-9]+-beta\.[0-9]+$'
 
           if ! [[ ${{ env.PACKAGE_BETA_VERSION }} =~ $beta_package_version_regex ]]; then
@@ -49,7 +47,7 @@ jobs:
 
       - name: Update package.json version to beta version specified
         run: |
-          yarn workspaces ${{ env.PACKAGE_TO_PUBLISH }} exec 'jq ".version = \"${{ env.PACKAGE_BETA_VERSION }}\"" package.json > package.tmp.json && mv package.tmp.json package.json'
+          yarn workspaces foreach -pt -v --no-private exec 'jq ".version = \"${{ env.PACKAGE_BETA_VERSION }}\"" package.json > package.tmp.json && mv package.tmp.json package.json'
         shell: bash
 
       - name: Build and publish beta package
